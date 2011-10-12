@@ -1,0 +1,324 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Application Splash Page</title>
+<style type="text/css" media="all">
+body#splashBody {
+font-family: arial, helvetica, verdana, sans-serif;
+font-size: 80%;
+margin: 0;
+padding: 0;
+width: 97%;
+}
+
+img {
+border: 0;
+margin: 0;
+padding: 0;
+}
+
+p {
+margin: 0;
+padding: 0;
+}
+
+h1.appName {
+font-weight: bold;
+font-size: 100%;
+color: #FFF;
+background-color: #007766;
+padding: 10px 0 10px 8px;
+margin: 0 0 15px 0;
+}
+
+h2 {
+color: #FFF;
+padding: 2px 0 2px 8px;
+margin-top: 0;
+background-color: #638658;
+font-size: 90%;
+}
+
+h2.exchangeTitle {
+background-color: #999;
+}
+
+#splash {
+margin: 0;
+padding: 0;
+width: 100%;
+}
+
+#splash td {
+margin: 0;
+padding: 0;
+}
+
+#splash #splashLeft {
+vertical-align: top;
+background-color: #F3F3EC;
+border-bottom: 2px solid #638658;
+}
+
+#splash #splashCenter {
+display: block;
+width: 15px;
+background-color: #FFF;
+}
+
+#splash #splashRight {
+vertical-align: top;
+background-color: #E8E8E8;
+border-bottom: 2px solid #999;
+}
+
+#splash #splashLeft .about,#splash #splashLeft .exchange {
+width: 100%;
+}
+
+#splash #splashRight .exchange p {
+font-size: 90%;
+color: #333;
+margin: 0 10px 12px 10px;
+line-height: 1.4em;
+}
+
+#splash #splashLeft .about p {
+font-size: 90%;
+color: #333;
+margin: 0 10px 12px 15px;
+line-height: 1.4em;
+}
+
+#splash #splashLeft .about fieldset {
+color: #333;
+margin: 0 15px 10px 15px;
+padding: 2px;
+}
+
+#splash #splashLeft .about fieldset ul {
+padding: 0;
+margin: .3em 0 .3em 2em;
+}
+
+#splash #splashLeft .about fieldset li {
+padding: 0;
+margin: 0;
+}
+
+#splash #splashLeft .about legend {
+font-size: 90%;
+color: #333;
+font-weight: bold;
+}
+
+.imgDiv {
+text-align: center;
+padding: 0 0 10px 0;
+}
+</style>
+</head>
+
+<body id="splashBody">
+<h1 class="appName">Mass Update And Masss Edit</h1>
+<table id="splash" cellspacing="0">
+<tr>
+<td id="splashLeft" width="75%">
+<div class="about">
+<p>This app allows users to mass update and mass 
+      edit selected records from any list view and related list. By default, the 
+      application supports the following entity types out of the box: Campaign, 
+      Lead, Account, Contact, Opportunity, Contract, Product, Case, Solution and 
+      Asset. With 15 minutes of work, you can add it to any custom object in 
+      your organization (see related links).
+          
+                 
+                 
+              
+                     
+           
+      
+<p>
+<b>Customization 
+      Instructions:</b>
+<p>After installing the package, please 
+      add mass edit and mass update buttons to list views and related lists. 
+        
+             
+      
+<p>For example, to add mass edit and 
+      mass update buttons to the opportunity list view:
+         
+           
+      <ol>
+        <ol>
+          <li>
+<div class="about">Go to 
+          Setup&gt;Customize&gt;Opportunities&gt;Search Layouts 
+          </div>
+          <li>
+<div>Click Edit link of 
+          Opportunities List View </div>
+          <li>
+<div>Add Mass Edit and Mass Update 
+          buttons to the selected buttons</div></li></ol></ol>
+<p>To add mass edit and mass update buttons to 
+      the opportunity related list of account:  
+                </p>
+      <ol>
+        <ol>
+          <li>
+<div>Go to 
+          Setup&gt;Customize&gt;Accounts&gt;Page Layouts, Edit 
+</div>
+          <li>
+<div>Edit the related list, expand 
+          the button section&nbsp;and add the buttons</div></li></ol></ol>
+<p>Please repeat the above 
+      steps for other entity types.</p>
+<p><strong>FAQ</strong></p>
+              
+            
+
+<ol>        
+                     
+                     
+                      
+        
+<li>How do I extend mass update and 
+        mass edit to custom objects?
+        <ul>        
+                     
+                     
+                      
+        
+<li>Please read <a id="listingDetailPage:listingDetailForm:j_id154:j_id155:j_id212:resourcesPanel:guide:0:content" href="https://sites.secure.force.com/appexchange/apex/content?contentId=a0K30000001DkfIEAS" name="listingDetailPage:listingDetailForm:j_id154:j_id155:j_id212:resourcesPanel:guide:0:content" >
+          Extending Mass Update/Edit to Custom Objects    </a>&nbsp;&nbsp;</li></ul>        
+                     
+                     
+                      
+        
+<li>How do 
+        I&nbsp;include the&nbsp;field&nbsp;displayed 
+        on the mass edit page?
+        <ul>        
+                     
+                     
+                      
+        
+<li>The 
+          corresponding Visualforce page needs to 
+          be modified to fit your needs.&nbsp; Here is an example of&nbsp;customizing mass edit 
+          opportunity page to fit your needs:
+          <ol>        
+                     
+                     
+                      
+        
+<li>Setup&gt;Develop&gt;Pages&gt; and Edit page 
+            with name MassEditOpp      
+                     
+                     
+                      
+        
+<li>Find the section that 
+            says
+            <ul>        
+                     
+                     
+                      
+        
+<li>&lt;apex:column 
+              headerValue="<font 
+              color=#ff0000>Type</font>"&gt;<br>&lt;apex:inputField 
+              value="{ !opp.<font 
+              color=#ff0000>type</font>}"/&gt;<br>&lt;/apex:column&gt;</li></ul>        
+                     
+                     
+                      
+        
+<li>Copy the&nbsp;above&nbsp;3 
+            lines, replace field api name in red with the field name you would 
+            like to add      
+                     
+                     
+                      
+        
+<li>Paste the modified 3 
+            lines&nbsp;below the existing&nbsp;3 lines, and 
+            save&nbsp;</li></ol></li></ul>        
+                     
+                     
+                      
+        
+<li>How do I find the field API name 
+        which is used in mass edit page?
+        <ul>        
+                     
+                     
+                      
+        
+<li><a id="listingDetailPage:listingDetailForm:j_id154:j_id155:j_id212:resourcesPanel:guide:0:content" href="https://na1.salesforce.com/_ui/training/help/pub/UserEdSolution?id=5013000000
+0LxPC&retURL=https%3A%2F%2Fna1.salesforce.com%2F_ui%2Ftraining%2Fh
+elp%2FCombinedSearchPage%3Fstr%3Dfind%2Bapi%2Bname&ps=1&orgId=00
+D000000000062"
+
+
+ name=listingDetailPage:listingDetailForm:j_id154:j_id155:j_id212:resourcesPanel:guide:0:content >How to find the Field API Name </a></li></ul></li>
+
+</ol>
+      <p></p>
+
+<p><strong>Further Considerations:</strong>
+      </p>
+<ul>
+<li>Enhanced installer to auto create 
+        Visualforce pages for Custom Objects
+<li>Please check appexchange for 
+        updates.        
+                                        </li>
+
+</ul>
+
+<fieldset><legend>Additional Help and Training</legend>
+<ul>
+<li>To learn more about using this application in 
+        your environment, contact your Salesforce administrator. 
+        
+<li>For answers to questions about using Salesforce, subscribers
+can contact customer support by clicking the Help &amp; Training link
+within the Salesforce application</li>
+</ul>
+
+</fieldset>
+</div>
+</td>
+
+<td>
+<div id="splashCenter"></div>
+</td>
+
+<td id="splashRight" width="25%">
+<div class="exchange">
+<h2 class="exchangeTitle">Related Links</h2>
+<p
+           <ul>
+              <li class=""><a id="listingDetailPage:listingDetailForm:j_id154:j_id155:j_id212:resourcesPanel:guide:0:content" href="https://sites.secure.force.com/appexchange/apex/content?contentId=a0K30000001DkfIEAS" name="listingDetailPage:listingDetailForm:j_id154:j_id155:j_id212:resourcesPanel:guide:0:content" ><font 
+      size=2>Extending Mass Update/Edit to Custom Objects</font>     </a>
+              <li class=""><a id="listingDetailPage:listingDetailForm:j_id154:j_id155:j_id212:resourcesPanel:guide:0:content" href="https://na1.salesforce.com/_ui/training/help/pub/UserEdSolution?id=5013000000
+0LxPC&retURL=https%3A%2F%2Fna1.salesforce.com%2F_ui%2Ftraining%2Fh
+elp%2FCombinedSearchPage%3Fstr%3Dfind%2Bapi%2Bname&ps=1&orgId=00
+D000000000062"
+
+
+ name=listingDetailPage:listingDetailForm:j_id154:j_id155:j_id212:resourcesPanel:guide:0:content ><font 
+      size=2>How to find the Field API Name</font>       </a>
+      <ul></ul>
+      <p></p></font></font>
+              </li></div>
+</td>
+</tr>
+</table>
+
+</body>
+</html>

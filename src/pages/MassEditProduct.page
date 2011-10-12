@@ -1,0 +1,32 @@
+<apex:page standardController="Product2" recordSetVar="unused" sidebar="false">
+<apex:includeScript value="{!$Resource.UtilJS}" />
+<apex:form >
+<apex:pageBlock >
+<apex:pageMessages />
+<apex:pageBlock >
+Note: All modifications made on the page will be lost if Return button is clicked without clicking the Save button first. 
+</apex:pageBlock>
+<apex:pageBlockButtons >
+<apex:commandButton value="Save" action="{!save}"/>
+<apex:commandButton value="Return" action="{!cancel}"/>
+</apex:pageBlockButtons>
+<apex:pageBlockTable value="{!selected}" var="a" id="table">
+<apex:column headerValue="Product Name">
+<apex:inputField value="{!a.name}"/>
+</apex:column>
+<apex:column headerValue="Product Code">
+<apex:inputField value="{!a.ProductCode}"/>
+</apex:column>
+<apex:column headerValue="Product Family">
+<apex:inputField value="{!a.Family}"/>
+</apex:column>
+<apex:column headerValue="Description">
+<apex:inputField value="{!a.Description}"/>
+</apex:column>
+<apex:column headerValue="Active">
+<apex:inputField value="{!a.IsActive}"/>
+</apex:column>
+</apex:pageBlockTable>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

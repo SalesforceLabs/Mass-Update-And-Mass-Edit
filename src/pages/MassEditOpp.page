@@ -1,0 +1,38 @@
+<apex:page standardController="Opportunity" recordSetVar="unused" sidebar="false">
+<apex:includeScript value="{!$Resource.UtilJS}" />
+<apex:form >
+<apex:pageBlock >
+<apex:pageMessages />
+<apex:pageBlock >
+Note: All modifications made on the page will be lost if Return button is clicked without clicking the Save button first. 
+</apex:pageBlock>
+<apex:pageBlockButtons >
+<apex:commandButton value="Save" action="{!save}"/>
+<apex:commandButton value="Return" action="{!cancel}"/>
+</apex:pageBlockButtons>
+<apex:pageBlockTable value="{!selected}" var="opp" id="table">
+<apex:column headerValue="Name">
+<apex:inputField value="{!opp.name}"/>
+</apex:column>
+<apex:column headerValue="Amount">
+<apex:inputField required="true" value="{!opp.amount}"/>
+</apex:column>
+<apex:column headerValue="Stage">
+<apex:inputField value="{!opp.stageName}"/>
+</apex:column>
+<apex:column headerValue="Close Date">
+<apex:inputField value="{!opp.closeDate}"/>
+</apex:column>
+<apex:column headerValue="Next Step">
+<apex:inputField value="{!opp.nextStep}"/>
+</apex:column>
+<apex:column headerValue="Type">
+<apex:inputField value="{!opp.type}"/>
+</apex:column>
+<apex:column headerValue="Forecast Category">
+<apex:inputField value="{!opp.ForecastCategoryName}"/>
+</apex:column>
+</apex:pageBlockTable>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

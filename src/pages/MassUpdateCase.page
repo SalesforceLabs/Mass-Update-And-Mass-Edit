@@ -1,0 +1,89 @@
+<apex:page standardController="Case" recordSetvar="unused" extensions="MassUpdateSimpleController" id="page">
+  
+  <!-- for this page to work with a specific custom object, change standController="entityname" to custom object api name  
+    For example, if custom object name is Warehouse__c, change first part of the first line to standardController="warehouse__c" -->
+  
+  <apex:includeScript value="{!$Resource.UtilJS}" />
+  <apex:form id="wizard">
+ 
+  <apex:sectionHeader title="Mass Update Wizard" subtitle="Step {!step} of 5"/>
+
+      <apex:pageBlock id="step1" title="Step 1. Confirm records to be updated" mode="edit" rendered="{!step='1'}">
+            <apex:pagemessages escape="false"></apex:pagemessages>
+			<apex:pageBlockSection >
+            <apex:pageBlockTable var="a" value="{!selected}">
+                <apex:column value="{!a.Subject}"/>
+				<apex:column value="{!a.CaseNumber}"/>
+				<apex:column value="{!a.Account.Name}"/>
+				<apex:column value="{!a.Status}"/>
+			    <apex:column value="{!a.Owner.Name}"/>
+            </apex:pageBlockTable>
+			</apex:pageBlockSection>
+			<apex:panelGrid columns="2">
+			</apex:panelGrid>
+          <apex:pageBlockButtons >
+              <apex:commandButton action="{!cancel}" value="Previous"/>
+              <apex:commandButton action="{!step2}" value="Next"/>
+          </apex:pageBlockButtons>
+      </apex:pageBlock> 
+  
+      <apex:pageBlock id="field" title="Step 2. Specify the field to be udpated" mode="edit" rendered="{!step='2'}">
+          <apex:pagemessages escape="false"></apex:pagemessages>
+          <apex:selectList id="pickList" size="1" value="{!fieldName}" required="true">
+              <apex:selectOptions value="{!fieldTypeOptions}"/>
+          </apex:selectList>
+          <apex:pageBlockButtons >
+              <apex:commandButton action="{!step3}" value="Next"/>
+              <apex:commandButton action="{!cancel}" value="Cancel" onclick="return confirmCancel()" immediate="true" style="margin-left: 2em"/>
+          </apex:pageBlockButtons>
+      </apex:pageBlock> 
+  
+      <apex:pageBlock id="step3" title="Step 3. Specify the new value for field - {!fieldName}" mode="edit" rendered="{!step='3'}">
+ 		 <apex:pagemessages escape="false"></apex:pagemessages>
+ 	     <apex:inputText rendered="{!fieldType='CURRENCY'}" value="{!valueToUpdate}" />
+  	   	 <apex:inputText rendered="{!fieldType='DATE'}" value="{!valueToUpdate}" />
+		 <apex:inputText rendered="{!fieldType='DATETIME'}" value="{!valueToUpdate}" />
+ 		 <apex:inputText rendered="{!fieldType='TEXT'}" value="{!valueToUpdate}" />
+         <apex:inputText rendered="{!fieldType='NUMBER'}" value="{!valueToUpdate}" />
+         <apex:inputText rendered="{!fieldType='COMBOBOX'}" value="{!valueToUpdate}" />
+         <apex:inputText rendered="{!fieldType='DOUBLE'}" value="{!valueToUpdate}" />
+         <apex:inputText rendered="{!fieldType='EMAIL'}" value="{!valueToUpdate}" />
+         <apex:inputText rendered="{!fieldType='ID'}" value="{!valueToUpdate}" />
+         <apex:inputText rendered="{!fieldType='INTEGER'}" value="{!valueToUpdate}" />
+         <apex:inputText rendered="{!fieldType='PERCENT'}" value="{!valueToUpdate}" />
+         <apex:inputText rendered="{!fieldType='MULTIPICKLIST'}" value="{!valueToUpdate}" />
+         <apex:inputText rendered="{!fieldType='PHONE'}" value="{!valueToUpdate}" />
+         <apex:inputText rendered="{!fieldType='STRING'}" value="{!valueToUpdate}" />
+         <apex:inputText rendered="{!fieldType='REFERENCE'}" value="{!valueToUpdate}" />
+         <apex:inputText rendered="{!fieldType='BASE64'}" value="{!valueToUpdate}" />
+         <apex:inputTextArea rendered="{!fieldType='TEXTAREA'}" rows="15" cols="100" value="{!valueToUpdate}" />
+         <apex:inputCheckBox rendered="{!fieldType='BOOLEAN'}" value="{!valueToUpdate}" />
+         <apex:selectList rendered="{!fieldType='PICKLIST'}" value="{!valueToUpdate}" size="1">
+		 <apex:selectOptions value="{!picklistvalues}"/>
+	     </apex:selectList>
+             <apex:pageBlockButtons >
+          	  <apex:commandButton action="{!step2}" value="Previous"/>
+              <apex:commandButton action="{!step4}" value="Next"/>
+              <apex:commandButton action="{!cancel}" value="Cancel" onclick="return confirmCancel()" immediate="true" style="margin-left: 2em"/>
+             </apex:pageBlockButtons>
+      </apex:pageBlock> 
+      
+      <apex:pageBlock id="step4" title="Step 4. Confirmation" mode="edit" rendered="{!step='4'}">
+          <apex:pagemessages escape="false"></apex:pagemessages>
+          <apex:pageBlockButtons >
+          	  <apex:commandButton action="{!step3}" value="Previous"/>
+              <apex:commandButton action="{!step5}" value="Update"/>
+              <apex:commandButton action="{!cancel}" value="Cancel" onclick="return confirmCancel()" immediate="true" style="margin-left: 2em"/>
+          </apex:pageBlockButtons>
+      </apex:pageBlock> 
+      
+      
+      <apex:pageBlock id="step5" title="Step 5. Results" mode="edit" rendered="{!step='5'}">
+          <apex:pagemessages escape="false"></apex:pagemessages>
+          <apex:pageBlockButtons >
+              <apex:commandButton action="{!cancel}" value="Done"/>
+          </apex:pageBlockButtons>
+      </apex:pageBlock> 
+      
+  </apex:form>
+</apex:page>

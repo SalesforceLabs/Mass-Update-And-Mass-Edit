@@ -1,0 +1,35 @@
+<apex:page standardController="Lead" recordSetVar="unused"  sidebar="false">
+<apex:includeScript value="{!$Resource.UtilJS}" />
+<apex:form >
+<apex:pageBlock >
+<apex:pageMessages />
+<apex:pageBlock >
+Note: All modifications made on the page will be lost if Return button is clicked without clicking the Save button first. 
+</apex:pageBlock>
+<apex:pageBlockButtons >
+<apex:commandButton value="Save" action="{!save}"/>
+<apex:commandButton value="Return" action="{!cancel}"/>
+</apex:pageBlockButtons>
+<apex:pageBlockTable value="{!selected}" var="a" id="table">
+<apex:column headerValue="Name">
+<apex:inputField value="{!a.Name}"/>
+</apex:column>
+<apex:column headerValue="Title">
+<apex:inputField value="{!a.Title}"/>
+</apex:column>
+<apex:column headerValue="Email">
+<apex:inputField value="{!a.Email}"/>
+</apex:column>
+<apex:column headerValue="Phone">
+<apex:inputField value="{!a.Phone}"/>
+</apex:column>
+<apex:column headerValue="Status">
+<apex:inputField value="{!a.Status}"/>
+</apex:column>
+<apex:column headerValue="Company">
+<apex:inputField value="{!a.Company}"/>
+</apex:column>
+</apex:pageBlockTable>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

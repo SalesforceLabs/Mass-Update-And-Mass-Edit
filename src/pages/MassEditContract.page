@@ -1,0 +1,41 @@
+<apex:page standardController="Contract" recordSetVar="unused" sidebar="false">
+<apex:includeScript value="{!$Resource.UtilJS}" />
+<apex:form >
+<apex:pageBlock >
+<apex:pageMessages />
+<apex:pageBlock >
+Note: All modifications made on the page will be lost if Return button is clicked without clicking the Save button first. 
+</apex:pageBlock>
+<apex:pageBlockButtons >
+<apex:commandButton value="Save" action="{!save}"/>
+<apex:commandButton value="Return" action="{!cancel}"/>
+</apex:pageBlockButtons>
+<apex:pageBlockTable value="{!selected}" var="a" id="table">
+<apex:column headerValue="Contract Number">
+<apex:inputField value="{!a.ContractNumber}"/>
+</apex:column>
+<apex:column headerValue="Status">
+<apex:inputField value="{!a.Status}"/>
+</apex:column>
+<apex:column headerValue="Status Code">
+<apex:inputField value="{!a.StatusCode}"/>
+</apex:column>
+<apex:column headerValue="Term (Month)">
+<apex:inputField value="{!a.ContractTerm}"/>
+</apex:column>
+<apex:column headerValue="Owner Expiration Notice">
+<apex:inputField value="{!a.OwnerExpirationNotice}"/>
+</apex:column>
+<apex:column headerValue="Account Name">
+<apex:inputField value="{!a.AccountId}"/>
+</apex:column>
+<apex:column headerValue="Activated Date">
+<apex:inputField value="{!a.ActivatedDate}"/>
+</apex:column>
+<apex:column headerValue="Special Terms">
+<apex:inputField value="{!a.SpecialTerms}"/>
+</apex:column>
+</apex:pageBlockTable>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

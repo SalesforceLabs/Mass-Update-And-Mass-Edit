@@ -1,0 +1,38 @@
+<apex:page standardController="Case" recordSetVar="unused" sidebar="false">
+<apex:includeScript value="{!$Resource.UtilJS}" />
+<apex:form >
+<apex:pageBlock >
+<apex:pageMessages />
+<apex:pageBlock >
+Note: All modifications made on the page will be lost if Return button is clicked without clicking the Save button first. 
+</apex:pageBlock>
+<apex:pageBlockButtons >
+<apex:commandButton value="Save" action="{!save}"/>
+<apex:commandButton value="Return" action="{!cancel}"/>
+</apex:pageBlockButtons>
+<apex:pageBlockTable value="{!selected}" var="a" id="table">
+<apex:column headerValue="Case Number">
+<apex:inputField value="{!a.CaseNumber}"/>
+</apex:column>
+<apex:column headerValue="Subject">
+<apex:inputField value="{!a.Subject}"/>
+</apex:column>
+<apex:column headerValue="Status">
+<apex:inputField value="{!a.Status}"/>
+</apex:column>
+<apex:column headerValue="Priority">
+<apex:inputField value="{!a.Priority}"/>
+</apex:column>
+<apex:column headerValue="Type">
+<apex:inputField value="{!a.Type}"/>
+</apex:column>
+<apex:column headerValue="Reason">
+<apex:inputField value="{!a.Reason}"/>
+</apex:column>
+<apex:column headerValue="Description">
+<apex:inputField value="{!a.Description}"/>
+</apex:column>
+</apex:pageBlockTable>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

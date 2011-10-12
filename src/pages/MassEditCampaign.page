@@ -1,0 +1,35 @@
+<apex:page standardController="Campaign" recordSetVar="unused" sidebar="false">
+<apex:includeScript value="{!$Resource.UtilJS}" />
+<apex:form >
+<apex:pageBlock >
+<apex:pageMessages />
+<apex:pageBlock >
+Note: All modifications made on the page will be lost if Return button is clicked without clicking the Save button first. 
+</apex:pageBlock>
+<apex:pageBlockButtons >
+<apex:commandButton value="Save" action="{!save}"/>
+<apex:commandButton value="Return" action="{!cancel}"/>
+</apex:pageBlockButtons>
+<apex:pageBlockTable value="{!selected}" var="a" id="table">
+<apex:column headerValue="Name">
+<apex:inputField value="{!a.name}"/>
+</apex:column>
+<apex:column headerValue="Type">
+<apex:inputField value="{!a.Type}"/>
+</apex:column>
+<apex:column headerValue="Status">
+<apex:inputField value="{!a.Status}"/>
+</apex:column>
+<apex:column headerValue="Actual Cost">
+<apex:inputField value="{!a.ActualCost}"/>
+</apex:column>
+<apex:column headerValue="Num Sent">
+<apex:inputField value="{!a.NumberSent}"/>
+</apex:column>
+<apex:column headerValue="End Date">
+<apex:inputField value="{!a.EndDate}"/>
+</apex:column>
+</apex:pageBlockTable>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

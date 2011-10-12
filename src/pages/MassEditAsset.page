@@ -1,0 +1,36 @@
+<apex:page standardController="Asset" recordSetVar="unused" tabStyle="Asset"
+sidebar="false">
+<apex:includeScript value="{!$Resource.UtilJS}" />
+<apex:form >
+<apex:pageBlock >
+<apex:pageMessages />
+<apex:pageBlock >
+Note: All modifications made on the page will be lost if Return button is clicked without clicking the Save button first. 
+</apex:pageBlock>
+<apex:pageBlockButtons >
+<apex:commandButton value="Save" action="{!save}"/>
+<apex:commandButton value="Return" action="{!cancel}"/>
+</apex:pageBlockButtons>
+<apex:pageBlockTable value="{!selected}" var="a" id="table">
+<apex:column headerValue="Assert Name">
+<apex:inputField value="{!a.name}"/>
+</apex:column>
+<apex:column headerValue="Product">
+<apex:inputField value="{!a.Product2Id}"/>
+</apex:column>
+<apex:column headerValue="Serial Number">
+<apex:inputField value="{!a.SerialNumber}"/>
+</apex:column>
+<apex:column headerValue="Install Date">
+<apex:inputField value="{!a.InstallDate}"/>
+</apex:column>
+<apex:column headerValue="Contact">
+<apex:inputField value="{!a.ContactId}"/>
+</apex:column>
+<apex:column headerValue="Status">
+<apex:inputField value="{!a.Status}"/>
+</apex:column>
+</apex:pageBlockTable>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

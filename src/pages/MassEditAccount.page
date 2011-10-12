@@ -1,0 +1,38 @@
+<apex:page standardController="Account" recordSetVar="unused" sidebar="false">
+<apex:includeScript value="{!$Resource.UtilJS}" />
+<apex:form >
+<apex:pageBlock >
+<apex:pageMessages />
+<apex:pageBlock >
+Note: All modifications made on the page will be lost if Return button is clicked without clicking the Save button first. 
+</apex:pageBlock>
+<apex:pageBlockButtons >
+<apex:commandButton value="Save" action="{!save}"/>
+<apex:commandButton value="Return" action="{!cancel}"/>
+</apex:pageBlockButtons>
+<apex:pageBlockTable value="{!selected}" var="acc" id="table">
+<apex:column headerValue="Name">
+<apex:inputField value="{!acc.name}"/>
+</apex:column>
+<apex:column headerValue="Annual Revenue">
+<apex:inputField value="{!acc.AnnualRevenue}"/>
+</apex:column>
+<apex:column headerValue="Rating">
+<apex:inputField value="{!acc.Rating}"/>
+</apex:column>
+<apex:column headerValue="Industry">
+<apex:inputField value="{!acc.Industry}"/>
+</apex:column>
+<apex:column headerValue="Phone">
+<apex:inputField value="{!acc.Phone}"/>
+</apex:column>
+<apex:column headerValue="Type">
+<apex:inputField value="{!acc.type}"/>
+</apex:column>
+<apex:column headerValue="Description">
+<apex:inputField value="{!acc.Description}"/>
+</apex:column>
+</apex:pageBlockTable>
+</apex:pageBlock>
+</apex:form>
+</apex:page>
