@@ -4,32 +4,32 @@
 <apex:pageBlock >
 <apex:pageMessages />
 <apex:pageBlock >
-Note: All modifications made on the page will be lost if Return button is clicked without clicking the Save button first. 
+{!$Label.NoteAllModificationsMade} 
 </apex:pageBlock>
 <apex:pageBlockButtons >
-<apex:commandButton value="Save" action="{!save}"/>
-<apex:commandButton value="Return" action="{!cancel}"/>
+<apex:commandButton value="{!$Label.Save}" action="{!save}"/>
+<apex:commandButton value="{!$Label.Return}" action="{!cancel}"/>
 </apex:pageBlockButtons>
 <apex:pageBlockTable value="{!selected}" var="opp" id="table">
-<apex:column headerValue="Name">
+<apex:column headerValue="{!$Label.Name}">
 <apex:inputField value="{!opp.name}"/>
 </apex:column>
-<apex:column headerValue="Amount">
+<apex:column headerValue="{!$Label.Amount}">
 <apex:inputField required="true" value="{!opp.amount}"/>
 </apex:column>
-<apex:column headerValue="Stage">
+<apex:column headerValue="{!$Label.Stage}">
 <apex:inputField value="{!opp.stageName}"/>
 </apex:column>
-<apex:column headerValue="Close Date">
+<apex:column headerValue="{!$Label.CloseDate}">
 <apex:inputField value="{!opp.closeDate}"/>
 </apex:column>
-<apex:column headerValue="Next Step">
+<apex:column headerValue="{!$Label.NextStep}">
 <apex:inputField value="{!opp.nextStep}"/>
 </apex:column>
-<apex:column headerValue="Type">
+<apex:column headerValue="{!$Label.Type}">
 <apex:inputField value="{!opp.type}"/>
 </apex:column>
-<apex:column headerValue="Forecast Category">
+<apex:column headerValue="{!$Label.ForecastCategory}">
 <apex:inputField value="{!opp.ForecastCategoryName}"/>
 </apex:column>
 </apex:pageBlockTable>

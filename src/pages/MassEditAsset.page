@@ -5,29 +5,29 @@ sidebar="false">
 <apex:pageBlock >
 <apex:pageMessages />
 <apex:pageBlock >
-Note: All modifications made on the page will be lost if Return button is clicked without clicking the Save button first. 
+{!$Label.NoteAllModificationsMade} 
 </apex:pageBlock>
 <apex:pageBlockButtons >
-<apex:commandButton value="Save" action="{!save}"/>
-<apex:commandButton value="Return" action="{!cancel}"/>
+<apex:commandButton value="{!$Label.Save}" action="{!save}"/>
+<apex:commandButton value="{!$Label.Return}" action="{!cancel}"/>
 </apex:pageBlockButtons>
 <apex:pageBlockTable value="{!selected}" var="a" id="table">
-<apex:column headerValue="Assert Name">
+<apex:column headerValue="{!$Label.AssertName}">
 <apex:inputField value="{!a.name}"/>
 </apex:column>
-<apex:column headerValue="Product">
+<apex:column headerValue="{!$Label.Product}">
 <apex:inputField value="{!a.Product2Id}"/>
 </apex:column>
-<apex:column headerValue="Serial Number">
+<apex:column headerValue="{!$Label.SerialNumber}">
 <apex:inputField value="{!a.SerialNumber}"/>
 </apex:column>
-<apex:column headerValue="Install Date">
+<apex:column headerValue="{!$Label.InstallDate}">
 <apex:inputField value="{!a.InstallDate}"/>
 </apex:column>
-<apex:column headerValue="Contact">
+<apex:column headerValue="{!$Label.Contact}">
 <apex:inputField value="{!a.ContactId}"/>
 </apex:column>
-<apex:column headerValue="Status">
+<apex:column headerValue="{!$Label.Status}">
 <apex:inputField value="{!a.Status}"/>
 </apex:column>
 </apex:pageBlockTable>
