@@ -44,15 +44,10 @@
         <label>All</label>
     </listViews>
     <nameField>
-        <label>abc Name</label>
+        <label>abc名</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>abc</pluralLabel>
-    <searchLayouts>
-        <listViewButtons>Mass_t</listViewButtons>
-        <listViewButtons>Mass_Update</listViewButtons>
-        <listViewButtons>Mass_Edit</listViewButtons>
-    </searchLayouts>
+    <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
     <webLinks>
         <fullName>Mass_Edit</fullName>

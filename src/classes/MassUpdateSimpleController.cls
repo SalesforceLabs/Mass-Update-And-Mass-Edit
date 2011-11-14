@@ -27,11 +27,11 @@ public with sharing class MassUpdateSimpleController {
             this.objs = (List<SObject>)cntr.getSelected();
        }
        if (getRecordSize()<1) {
-            String msg = 'No record was selected on the list view.  Please click Previous button and select records for mass update.'; 
+            String msg = System.Label.NoRecordWasSelectedOnTheListView; 
             currentMsg = new ApexPages.Message(ApexPages.severity.ERROR, msg);
        } else {
             sType= discoverSObjectType(objs.get(0)).getName(); 
-            String msg = 'Number of records selected for update: ' + getRecordSize(); 
+            String msg = System.Label.NumberOfRecordsSelectedForUpdate + ': ' + getRecordSize(); 
             currentMsg = new ApexPages.Message(ApexPages.severity.INFO, msg);
        }
        ApexPages.addMessage(currentMsg);
@@ -171,32 +171,32 @@ public with sharing class MassUpdateSimpleController {
             
             picklistValues = new List<SelectOption>();      
             if (d.isNillable()) {
-                picklistValues.add(new SelectOption('', '--None--'));
+                picklistValues.add(new SelectOption('', '--' + System.Label.None + '--'));
             }
             for (Schema.PicklistEntry p : d.getPickListValues()) {
                 picklistValues.add(new SelectOption(p.getValue(), p.getLabel()));
             }
-            msg += newline + 'Please select a picklist value';
+            msg += newline + System.Label.PleaseSelectAPicklistValue;
         } else if (d.getType()==DisplayType.MultiPicklist){
             
-            msg += 'Valid Picklist Values: ';
+            msg += System.Label.ValidPicklistValues + ': ';
             String combined ='';
             
             for (Schema.PicklistEntry p : d.getPickListValues()) {
                 msg += newLine + '&nbsp;&nbsp;&nbsp;&nbsp;<b>' +p.getValue()+'</b>';
                 combined += p.getValue()+';';
             }
-            msg += newline + 'Use ; to seperate each picklist value you want to select';
-            msg += newline + 'For example, to select all the picklist values, enter <b>' + combined + '</b> in the textbox below to select all picklist values';
+            msg += newline + System.Label.UseToSeperateEachPicklistValue;
+            msg += newline + System.Label.ForExample_FirstHalf + ' <b>' + combined + '</b> ' + System.Label.ForExample_SecondHalf;
         } else if (d.getType()==DisplayType.Integer){
-            msg += 'Max digits: ' + d.getDigits();
+            msg += System.Label.MaxDigits + ': ' + d.getDigits();
         } else if (d.getType()==DisplayType.String){
-            msg += 'Max length: ' + d.getLength();
+            msg += System.Label.MaxLength + ': ' + d.getLength();
         } else if (d.getType()==DisplayType.Double || d.getType()==DisplayType.Currency || d.getType()==DisplayType.Percent){
-            msg += 'Format: (' + (d.getPrecision()-d.getScale()) + ','+d.getScale() +')';
+            msg += System.Label.FormatString + ': (' + (d.getPrecision()-d.getScale()) + ','+d.getScale() +')';
         } else if (d.getType()==DisplayType.Reference){
-            msg += 'Use this to change selected records to reference a different record, or even dereference records if the filed is left blank' + newLine;
-            msg += 'Please enter ' + d.getName() + ' that the selected records should reference to';
+            msg += System.Label.UseThisToChangeSelectedRecords + newLine;
+            msg += System.Label.PleaseEnter_FirstHalf + ' ' + d.getName() + ' ' + System.Label.PleaseEnter_SecondHalf;
         }
         
         return msg;
@@ -236,10 +236,10 @@ public with sharing class MassUpdateSimpleController {
             return ApexPages.currentPage();
         }
         
-        String msg = 'Please review your selections before confirm: <br></br>'; 
-        msg = msg + '<br><b>Records Selected:</b>    ' + getRecordSize() +'</br>';
-        msg = msg + '<br><b>Field To Be Updated:</b> ' + fieldName + '</br>';
-        msg = msg + '<br><b>New Value:</b>           ' + convertedFieldData + '</br>';
+        String msg = System.Label.PleaseReviewYourSelectionsBeforeConfirm + ': <br></br>'; 
+        msg = msg + '<br><b>' + System.Label.RecordsSelected + ':</b>    ' + getRecordSize() +'</br>';
+        msg = msg + '<br><b>' + System.Label.FieldToBeUpdated + ':</b> ' + fieldName + '</br>';
+        msg = msg + '<br><b>' + System.Label.NewValue + ':</b>           ' + convertedFieldData + '</br>';
         currentMsg = new ApexPages.Message(ApexPages.severity.INFO, msg);
         ApexPages.addMessage(currentMsg);
         currentStep='4';   	     

@@ -6,9 +6,9 @@
   <apex:includeScript value="{!$Resource.UtilJS}" />
   <apex:form id="wizard">
  
-  <apex:sectionHeader title="Mass Update Wizard" subtitle="Step {!step} of 5"/>
+  <apex:sectionHeader title="{!$Label.MassUpdateWizard}" subtitle="Step {!step} of 5"/>
 
-      <apex:pageBlock id="step1" title="Step 1. Confirm records to be updated" mode="edit" rendered="{!step='1'}">
+      <apex:pageBlock id="step1" title="{!$Label.Step1ConfirmRecordsToBeUpdated}" mode="edit" rendered="{!step='1'}">
             <apex:pagemessages escape="false"></apex:pagemessages>
 			<apex:pageBlockSection >
             <apex:pageBlockTable var="a" value="{!selected}">
@@ -18,23 +18,23 @@
 			<apex:panelGrid columns="2">
 			</apex:panelGrid>
           <apex:pageBlockButtons >
-              <apex:commandButton action="{!cancel}" value="Previous"/>
-              <apex:commandButton action="{!step2}" value="Next"/>
+              <apex:commandButton action="{!cancel}" value="{!$Label.Previous}"/>
+              <apex:commandButton action="{!step2}" value="{!$Label.Next}"/>
           </apex:pageBlockButtons>
       </apex:pageBlock> 
   
-      <apex:pageBlock id="field" title="Step 2. Specify the field to be udpated" mode="edit" rendered="{!step='2'}">
+      <apex:pageBlock id="field" title="{!$Label.Step2SpecifyTheFieldToBeUdpated}" mode="edit" rendered="{!step='2'}">
           <apex:pagemessages escape="false"></apex:pagemessages>
           <apex:selectList id="pickList" size="1" value="{!fieldName}" required="true">
               <apex:selectOptions value="{!fieldTypeOptions}"/>
           </apex:selectList>
           <apex:pageBlockButtons >
-              <apex:commandButton action="{!step3}" value="Next"/>
-              <apex:commandButton action="{!cancel}" value="Cancel" onclick="return confirmCancel()" immediate="true" style="margin-left: 2em"/>
+              <apex:commandButton action="{!step3}" value="{!$Label.Next}"/>
+              <apex:commandButton action="{!cancel}" value="{!$Label.Cancel}" onclick="return confirmCancel()" immediate="true" style="margin-left: 2em"/>
           </apex:pageBlockButtons>
       </apex:pageBlock> 
   
-      <apex:pageBlock id="step3" title="Step 3. Specify the new value for field - {!fieldName}" mode="edit" rendered="{!step='3'}">
+      <apex:pageBlock id="step3" title="{!$Label.Step3SpecifyTheNewValueForField} - {!fieldName}" mode="edit" rendered="{!step='3'}">
  		 <apex:pagemessages escape="false"></apex:pagemessages>
  	     <apex:inputText rendered="{!fieldType='CURRENCY'}" value="{!valueToUpdate}" />
   	   	 <apex:inputText rendered="{!fieldType='DATE'}" value="{!valueToUpdate}" />
@@ -58,26 +58,26 @@
 		 <apex:selectOptions value="{!picklistvalues}"/>
 	     </apex:selectList>
              <apex:pageBlockButtons >
-          	  <apex:commandButton action="{!step2}" value="Previous"/>
-              <apex:commandButton action="{!step4}" value="Next"/>
-              <apex:commandButton action="{!cancel}" value="Cancel" onclick="return confirmCancel()" immediate="true" style="margin-left: 2em"/>
+          	  <apex:commandButton action="{!step2}" value="{!$Label.Previous}"/>
+              <apex:commandButton action="{!step4}" value="{!$Label.Next}"/>
+              <apex:commandButton action="{!cancel}" value="{!$Label.Cancel}" onclick="return confirmCancel()" immediate="true" style="margin-left: 2em"/>
              </apex:pageBlockButtons>
       </apex:pageBlock> 
       
-      <apex:pageBlock id="step4" title="Step 4. Confirmation" mode="edit" rendered="{!step='4'}">
+      <apex:pageBlock id="step4" title="{!$Label.Step4Confirmation}" mode="edit" rendered="{!step='4'}">
           <apex:pagemessages escape="false"></apex:pagemessages>
           <apex:pageBlockButtons >
-          	  <apex:commandButton action="{!step3}" value="Previous"/>
-              <apex:commandButton action="{!step5}" value="Update"/>
-              <apex:commandButton action="{!cancel}" value="Cancel" onclick="return confirmCancel()" immediate="true" style="margin-left: 2em"/>
+          	  <apex:commandButton action="{!step3}" value="{!$Label.Previous}"/>
+              <apex:commandButton action="{!step5}" value="{!$Label.Update}"/>
+              <apex:commandButton action="{!cancel}" value="{!$Label.Cancel}" onclick="return confirmCancel()" immediate="true" style="margin-left: 2em"/>
           </apex:pageBlockButtons>
       </apex:pageBlock> 
       
       
-      <apex:pageBlock id="step5" title="Step 5. Results" mode="edit" rendered="{!step='5'}">
+      <apex:pageBlock id="step5" title="{!$Label.Step5Results}" mode="edit" rendered="{!step='5'}">
           <apex:pagemessages escape="false"></apex:pagemessages>
           <apex:pageBlockButtons >
-              <apex:commandButton action="{!cancel}" value="Done"/>
+              <apex:commandButton action="{!cancel}" value="{!$Label.Done}"/>
           </apex:pageBlockButtons>
       </apex:pageBlock> 
       

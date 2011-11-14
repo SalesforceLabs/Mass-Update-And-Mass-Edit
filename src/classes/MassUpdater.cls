@@ -16,7 +16,7 @@ public with sharing class MassUpdater {
 	}
 	
 	public ApexPages.Message massUpdate() {
-    	if (field==null || objsToUpdate==null || objsToUpdate.size()<1) return currentMsg = new ApexPages.Message(ApexPages.severity.ERROR, 'No record selected for update.  Please click cancle to return');
+    	if (field==null || objsToUpdate==null || objsToUpdate.size()<1) return currentMsg = new ApexPages.Message(ApexPages.severity.ERROR, System.Label.NoRecordSelectedForUpdate);
     	
     	DisplayType t = field.getDescribe().getType();
     	
@@ -26,14 +26,14 @@ public with sharing class MassUpdater {
 	    	}
 	    } catch (System.SObjectException e){
           	System.debug('Type exception: ' + e.getMessage());
-          	return new ApexPages.Message(ApexPages.severity.ERROR, e.getMessage() + '<br></br>0 record updated');
+          	return new ApexPages.Message(ApexPages.severity.ERROR, e.getMessage() + '<br></br>' + System.Label.ZeroRecordUpdated);
         }  	
     	
 		try{
 		   update objsToUpdate;
-		   currentMsg = new ApexPages.Message(ApexPages.severity.INFO, 'Updated ' + objsToUpdate.size() + ' Records');
+		   currentMsg = new ApexPages.Message(ApexPages.severity.INFO, System.Label.Updated + ' ' + objsToUpdate.size() + ' ' + System.Label.Records);
 		}catch(System.DmlException e){
-           currentMsg = new ApexPages.Message(ApexPages.severity.ERROR, e.getDmlMessage(0) + '  No record updated');
+           currentMsg = new ApexPages.Message(ApexPages.severity.ERROR, e.getDmlMessage(0) + '  ' + System.Label.NoRecordUpdated);
         }
         return currentMsg;
 	}
