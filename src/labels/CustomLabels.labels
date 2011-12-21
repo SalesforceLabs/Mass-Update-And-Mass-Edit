@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Account</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Account</shortDescription>
+        <value>Account</value>
+    </labels>
+    <labels>
+        <fullName>AccountName</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Account Name</shortDescription>
+        <value>Account Name</value>
+    </labels>
+    <labels>
+        <fullName>ActivatedDate</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Activated Date</shortDescription>
+        <value>Activated Date</value>
+    </labels>
+    <labels>
+        <fullName>Active</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Active</shortDescription>
+        <value>Active</value>
+    </labels>
+    <labels>
+        <fullName>ActualCost</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Actual Cost</shortDescription>
+        <value>Actual Cost</value>
+    </labels>
+    <labels>
+        <fullName>AddMassEditAndMassUpdateButtons</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Add Mass Edit and Mass Update buttons to the selected buttons</shortDescription>
+        <value>Add Mass Edit and Mass Update buttons to the selected buttons</value>
+    </labels>
+    <labels>
+        <fullName>AdditionalHelpAndTraining</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Additional Help and Training</shortDescription>
+        <value>Additional Help and Training</value>
+    </labels>
+    <labels>
+        <fullName>AfterInstallingThePackage</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>After installing the package, please add mass edit and mass update buttons to li</shortDescription>
+        <value>After installing the package, please add mass edit and mass update buttons to list views and related lists.</value>
+    </labels>
+    <labels>
+        <fullName>Amount</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Amount</shortDescription>
+        <value>Amount</value>
+    </labels>
+    <labels>
+        <fullName>AnnualRevenue</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Annual Revenue</shortDescription>
+        <value>Annual Revenue</value>
+    </labels>
+    <labels>
+        <fullName>ApplicationSplashPage</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Application Splash Page</shortDescription>
+        <value>Application Splash Page</value>
+    </labels>
+    <labels>
+        <fullName>AssertName</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Assert Name</shortDescription>
+        <value>Assert Name</value>
+    </labels>
+    <labels>
+        <fullName>ByDefaultTheApplicationSupportsTheFollowing</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>By default, the application supports the following entity types out of the box:</shortDescription>
+        <value>By default, the application supports the following entity types out of the box: Campaign, Lead, Account, Contact, Opportunity, Contract, Product, Case, Solution and Asset. With 15 minutes of work, you can add it to any custom object in your organization (see related links).</value>
+    </labels>
+    <labels>
+        <fullName>Cancel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>CaseNumber</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Case Number</shortDescription>
+        <value>Case Number</value>
+    </labels>
+    <labels>
+        <fullName>ClickEditLinkOfOpportunities</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Click Edit link of Opportunities List View</shortDescription>
+        <value>Click Edit link of Opportunities List View</value>
+    </labels>
+    <labels>
+        <fullName>CloseDate</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Close Date</shortDescription>
+        <value>Close Date</value>
+    </labels>
+    <labels>
+        <fullName>Company</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Company</shortDescription>
+        <value>Company</value>
+    </labels>
+    <labels>
+        <fullName>Contact</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contact</shortDescription>
+        <value>Contact</value>
+    </labels>
+    <labels>
+        <fullName>ContractNumber</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contract Number</shortDescription>
+        <value>Contract Number</value>
+    </labels>
+    <labels>
+        <fullName>CopyTheAbove</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Copy the&amp;nbsp;above&amp;nbsp;3 lines, replace field api name in red with the field n</shortDescription>
+        <value>Copy the&amp;nbsp;above&amp;nbsp;3 lines, replace field api name in red with the field name you would like to add</value>
+    </labels>
+    <labels>
+        <fullName>CustomizationInstructions</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Customization Instructions:</shortDescription>
+        <value>Customization Instructions:</value>
+    </labels>
+    <labels>
+        <fullName>Description</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Description</shortDescription>
+        <value>Description</value>
+    </labels>
+    <labels>
+        <fullName>Done</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Done</shortDescription>
+        <value>Done</value>
+    </labels>
+    <labels>
+        <fullName>EditTheRelatedList</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Edit the related list, expand the button section&amp;nbsp;and add the buttons</shortDescription>
+        <value>Edit the related list, expand the button section&amp;nbsp;and add the buttons</value>
+    </labels>
+    <labels>
+        <fullName>Email</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Email</shortDescription>
+        <value>Email</value>
+    </labels>
+    <labels>
+        <fullName>EndDate</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>End Date</shortDescription>
+        <value>End Date</value>
+    </labels>
+    <labels>
+        <fullName>EnhancedInstallerToAutoCreate</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Enhanced installer to auto create Visualforce pages for Custom Objects</shortDescription>
+        <value>Enhanced installer to auto create Visualforce pages for Custom Objects</value>
+    </labels>
+    <labels>
+        <fullName>ExtendingMassUpdateEditToCustomObjects</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Extending Mass Update/Edit to Custom Objects</shortDescription>
+        <value>Extending Mass Update/Edit to Custom Objects</value>
+    </labels>
+    <labels>
+        <fullName>FAQ</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>FAQ</shortDescription>
+        <value>FAQ</value>
+    </labels>
+    <labels>
+        <fullName>FieldToBeUpdated</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Field To Be Updated</shortDescription>
+        <value>Field To Be Updated</value>
+    </labels>
+    <labels>
+        <fullName>FindTheSectionThatSays</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Find the section that says</shortDescription>
+        <value>Find the section that says</value>
+    </labels>
+    <labels>
+        <fullName>ForAnswersToQuestionsAboutUsingSalesforce</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>For answers to questions about using Salesforce, subscribers can contact custome</shortDescription>
+        <value>For answers to questions about using Salesforce, subscribers can contact customer support by clicking the Help &amp;amp; Training link within the Salesforce application</value>
+    </labels>
+    <labels>
+        <fullName>ForExampleToAddRassEdit</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>For example, to add mass edit and mass update buttons to the opportunity list vi</shortDescription>
+        <value>For example, to add mass edit and mass update buttons to the opportunity list view:</value>
+    </labels>
+    <labels>
+        <fullName>ForExample_FirstHalf</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>For example, to select all the picklist values, enter</shortDescription>
+        <value>For example, to select all the picklist values, enter</value>
+    </labels>
+    <labels>
+        <fullName>ForExample_SecondHalf</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>in the textbox below to select all picklist values</shortDescription>
+        <value>in the textbox below to select all picklist values</value>
+    </labels>
+    <labels>
+        <fullName>ForecastCategory</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Forecast Category</shortDescription>
+        <value>Forecast Category</value>
+    </labels>
+    <labels>
+        <fullName>FormatString</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Format</shortDescription>
+        <value>Format</value>
+    </labels>
+    <labels>
+        <fullName>FurtherConsiderations</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Further Considerations:</shortDescription>
+        <value>Further Considerations:</value>
+    </labels>
+    <labels>
+        <fullName>GoToSetupCustomize</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Go to Setup&amp;gt;Customize&amp;gt;Opportunities&amp;gt;Search Layouts</shortDescription>
+        <value>Go to Setup&amp;gt;Customize&amp;gt;Opportunities&amp;gt;Search Layouts</value>
+    </labels>
+    <labels>
+        <fullName>GoToSetupCustomizeAccountsPage</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Go to Setup&amp;gt;Customize&amp;gt;Accounts&amp;gt;Page Layouts, Edit</shortDescription>
+        <value>Go to Setup&amp;gt;Customize&amp;gt;Accounts&amp;gt;Page Layouts, Edit</value>
+    </labels>
+    <labels>
+        <fullName>HowDoIExtendMassUpdateAndMassEdit</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>How do I extend mass update and mass edit to custom objects?</shortDescription>
+        <value>How do I extend mass update and mass edit to custom objects?</value>
+    </labels>
+    <labels>
+        <fullName>HowDoIFindTheFieldAPIName</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>How do I find the field API name which is used in mass edit page?</shortDescription>
+        <value>How do I find the field API name which is used in mass edit page?</value>
+    </labels>
+    <labels>
+        <fullName>HowDoIIncludeTheFieldDisplayed</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>How do I&amp;nbsp;include the&amp;nbsp;field&amp;nbsp;displayed on the mass edit page?</shortDescription>
+        <value>How do I&amp;nbsp;include the&amp;nbsp;field&amp;nbsp;displayed on the mass edit page?</value>
+    </labels>
+    <labels>
+        <fullName>HowToFindTheFieldAPIName</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>How to find the Field API Name</shortDescription>
+        <value>How to find the Field API Name</value>
+    </labels>
+    <labels>
+        <fullName>Industry</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Industry</shortDescription>
+        <value>Industry</value>
+    </labels>
+    <labels>
+        <fullName>InstallDate</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Install Date</shortDescription>
+        <value>Install Date</value>
+    </labels>
+    <labels>
+        <fullName>MassUpdateAndMasssEdit</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Mass Update And Masss Edit</shortDescription>
+        <value>Mass Update And Masss Edit</value>
+    </labels>
+    <labels>
+        <fullName>MassUpdateWizard</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Mass Update Wizard</shortDescription>
+        <value>Mass Update Wizard</value>
+    </labels>
+    <labels>
+        <fullName>MaxDigits</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Max digits</shortDescription>
+        <value>Max digits</value>
+    </labels>
+    <labels>
+        <fullName>MaxLength</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Max length</shortDescription>
+        <value>Max length</value>
+    </labels>
+    <labels>
+        <fullName>MobilePhone</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Mobile Phone</shortDescription>
+        <value>Mobile Phone</value>
+    </labels>
+    <labels>
+        <fullName>Name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Name</shortDescription>
+        <value>Name</value>
+    </labels>
+    <labels>
+        <fullName>NewValue</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>New Value</shortDescription>
+        <value>New Value</value>
+    </labels>
+    <labels>
+        <fullName>Next</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Next</shortDescription>
+        <value>Next</value>
+    </labels>
+    <labels>
+        <fullName>NextStep</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Next Step</shortDescription>
+        <value>Next Step</value>
+    </labels>
+    <labels>
+        <fullName>NoRecordSelectedForUpdate</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No record selected for update.  Please click cancle to return</shortDescription>
+        <value>No record selected for update.  Please click cancle to return</value>
+    </labels>
+    <labels>
+        <fullName>NoRecordUpdated</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No record updated</shortDescription>
+        <value>No record updated</value>
+    </labels>
+    <labels>
+        <fullName>NoRecordWasSelectedOnTheListView</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No record was selected on the list view.  Please click Previous button and selec</shortDescription>
+        <value>No record was selected on the list view.  Please click Previous button and select records for mass update.</value>
+    </labels>
+    <labels>
+        <fullName>None</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>None</shortDescription>
+        <value>None</value>
+    </labels>
+    <labels>
+        <fullName>NoteAllModificationsMade</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Note: All modifications made on the page will be lost if Return button is clicke</shortDescription>
+        <value>Note: All modifications made on the page will be lost if Return button is clicked without clicking the Save button first.</value>
+    </labels>
+    <labels>
+        <fullName>NumSent</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Num Sent</shortDescription>
+        <value>Num Sent</value>
+    </labels>
+    <labels>
+        <fullName>NumberOfRecordsSelectedForUpdate</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Number of records selected for update</shortDescription>
+        <value>Number of records selected for update</value>
+    </labels>
+    <labels>
+        <fullName>OwnerExpirationNotice</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Owner Expiration Notice</shortDescription>
+        <value>Owner Expiration Notice</value>
+    </labels>
+    <labels>
+        <fullName>PasteTheModified3Lines</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Paste the modified 3 lines&amp;nbsp;below the existing&amp;nbsp;3 lines, and save&amp;nbsp;</shortDescription>
+        <value>Paste the modified 3 lines&amp;nbsp;below the existing&amp;nbsp;3 lines, and save&amp;nbsp;</value>
+    </labels>
+    <labels>
+        <fullName>Phone</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Phone</shortDescription>
+        <value>Phone</value>
+    </labels>
+    <labels>
+        <fullName>PleaseCheckAppexchange</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please check appexchange for updates.</shortDescription>
+        <value>Please check appexchange for updates.</value>
+    </labels>
+    <labels>
+        <fullName>PleaseEnter_FirstHalf</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please enter</shortDescription>
+        <value>Please enter</value>
+    </labels>
+    <labels>
+        <fullName>PleaseEnter_SecondHalf</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>that the selected records should reference to</shortDescription>
+        <value>that the selected records should reference to</value>
+    </labels>
+    <labels>
+        <fullName>PleaseRead</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please read</shortDescription>
+        <value>Please read</value>
+    </labels>
+    <labels>
+        <fullName>PleaseRepeatTheAboveSteps</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please repeat the above steps for other entity types.</shortDescription>
+        <value>Please repeat the above steps for other entity types.</value>
+    </labels>
+    <labels>
+        <fullName>PleaseReviewYourSelectionsBeforeConfirm</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please review your selections before confirm</shortDescription>
+        <value>Please review your selections before confirm</value>
+    </labels>
+    <labels>
+        <fullName>PleaseSelectAPicklistValue</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please select a picklist value</shortDescription>
+        <value>Please select a picklist value</value>
+    </labels>
+    <labels>
+        <fullName>Previous</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Previous</shortDescription>
+        <value>Previous</value>
+    </labels>
+    <labels>
+        <fullName>Priority</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Priority</shortDescription>
+        <value>Priority</value>
+    </labels>
+    <labels>
+        <fullName>Product</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Product</shortDescription>
+        <value>Product</value>
+    </labels>
+    <labels>
+        <fullName>ProductCode</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Product Code</shortDescription>
+        <value>Product Code</value>
+    </labels>
+    <labels>
+        <fullName>ProductFamily</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Product Family</shortDescription>
+        <value>Product Family</value>
+    </labels>
+    <labels>
+        <fullName>ProductName</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Product Name</shortDescription>
+        <value>Product Name</value>
+    </labels>
+    <labels>
+        <fullName>Rating</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Rating</shortDescription>
+        <value>Rating</value>
+    </labels>
+    <labels>
+        <fullName>Reason</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Reason</shortDescription>
+        <value>Reason</value>
+    </labels>
+    <labels>
+        <fullName>Records</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Records</shortDescription>
+        <value>Records</value>
+    </labels>
+    <labels>
+        <fullName>RecordsSelected</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Records Selected</shortDescription>
+        <value>Records Selected</value>
+    </labels>
+    <labels>
+        <fullName>RelatedLinks</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Related Links</shortDescription>
+        <value>Related Links</value>
+    </labels>
+    <labels>
+        <fullName>Return</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Return</shortDescription>
+        <value>Return</value>
+    </labels>
+    <labels>
+        <fullName>Save</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Save</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>SerialNumber</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Serial Number</shortDescription>
+        <value>Serial Number</value>
+    </labels>
+    <labels>
+        <fullName>SetupDevelopPagesAndEditPage</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Setup&amp;gt;Develop&amp;gt;Pages&amp;gt; and Edit page with name MassEditOpp</shortDescription>
+        <value>Setup&amp;gt;Develop&amp;gt;Pages&amp;gt; and Edit page with name MassEditOpp</value>
+    </labels>
+    <labels>
+        <fullName>SolutionName</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Solution Name</shortDescription>
+        <value>Solution Name</value>
+    </labels>
+    <labels>
+        <fullName>SolutionNote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Solution Note</shortDescription>
+        <value>Solution Note</value>
+    </labels>
+    <labels>
+        <fullName>SolutionNumber</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Solution Number</shortDescription>
+        <value>Solution Number</value>
+    </labels>
+    <labels>
+        <fullName>SpecialTerms</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Special Terms</shortDescription>
+        <value>Special Terms</value>
+    </labels>
+    <labels>
+        <fullName>Stage</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Stage</shortDescription>
+        <value>Stage</value>
+    </labels>
+    <labels>
+        <fullName>Status</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Status</shortDescription>
+        <value>Status</value>
+    </labels>
+    <labels>
+        <fullName>StatusCode</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Status Code</shortDescription>
+        <value>Status Code</value>
+    </labels>
+    <labels>
+        <fullName>Step1ConfirmRecordsToBeUpdated</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Step 1. Confirm records to be updated</shortDescription>
+        <value>Step 1. Confirm records to be updated</value>
+    </labels>
+    <labels>
+        <fullName>Step2SpecifyTheFieldToBeUdpated</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Step 2. Specify the field to be udpated</shortDescription>
+        <value>Step 2. Specify the field to be udpated</value>
+    </labels>
+    <labels>
+        <fullName>Step3SpecifyTheNewValueForField</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Step 3. Specify the new value for field</shortDescription>
+        <value>Step 3. Specify the new value for field</value>
+    </labels>
+    <labels>
+        <fullName>Step4Confirmation</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Step 4. Confirmation</shortDescription>
+        <value>Step 4. Confirmation</value>
+    </labels>
+    <labels>
+        <fullName>Step5Results</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Step 5. Results</shortDescription>
+        <value>Step 5. Results</value>
+    </labels>
+    <labels>
+        <fullName>Subject</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Subject</shortDescription>
+        <value>Subject</value>
+    </labels>
+    <labels>
+        <fullName>TermMonth</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Term (Month)</shortDescription>
+        <value>Term (Month)</value>
+    </labels>
+    <labels>
+        <fullName>TheCorrespondingVisualforcePageNeeds</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>The corresponding Visualforce page needs to be modified to fit your needs.&amp;nbsp;</shortDescription>
+        <value>The corresponding Visualforce page needs to be modified to fit your needs.&amp;nbsp; Here is an example of&amp;nbsp;customizing mass edit opportunity page to fit your needs:</value>
+    </labels>
+    <labels>
+        <fullName>ThisAppAllowsUsers</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>This app allows users to mass update and mass edit selected records from any lis</shortDescription>
+        <value>This app allows users to mass update and mass edit selected records from any list view and related list.</value>
+    </labels>
+    <labels>
+        <fullName>Title</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Title</shortDescription>
+        <value>Title</value>
+    </labels>
+    <labels>
+        <fullName>ToAddMassEditAndMassUpdate</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>To add mass edit and mass update buttons to the opportunity related list of acco</shortDescription>
+        <value>To add mass edit and mass update buttons to the opportunity related list of account:</value>
+    </labels>
+    <labels>
+        <fullName>ToLearnMoreAboutUsingThisApplication</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>To learn more about using this application in your environment, contact your Sal</shortDescription>
+        <value>To learn more about using this application in your environment, contact your Salesforce administrator.</value>
+    </labels>
+    <labels>
+        <fullName>Type</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Type</shortDescription>
+        <value>Type</value>
+    </labels>
+    <labels>
+        <fullName>Update</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Update</shortDescription>
+        <value>Update</value>
+    </labels>
+    <labels>
+        <fullName>Updated</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Updated</shortDescription>
+        <value>Updated</value>
+    </labels>
+    <labels>
+        <fullName>UseThisToChangeSelectedRecords</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Use this to change selected records to reference a different record, or even der</shortDescription>
+        <value>Use this to change selected records to reference a different record, or even dereference records if the filed is left blank</value>
+    </labels>
+    <labels>
+        <fullName>UseToSeperateEachPicklistValue</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Use ; to seperate each picklist value you want to select</shortDescription>
+        <value>Use ; to seperate each picklist value you want to select</value>
+    </labels>
+    <labels>
+        <fullName>ValidPicklistValues</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Valid Picklist Values</shortDescription>
+        <value>Valid Picklist Values</value>
+    </labels>
+    <labels>
+        <fullName>ZeroRecordUpdated</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>0 record updated</shortDescription>
+        <value>0 record updated</value>
+    </labels>
+</CustomLabels>

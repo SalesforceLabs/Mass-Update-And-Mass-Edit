@@ -4,29 +4,29 @@
 <apex:pageBlock >
 <apex:pageMessages />
 <apex:pageBlock >
-Note: All modifications made on the page will be lost if Return button is clicked without clicking the Save button first. 
+{!$Label.NoteAllModificationsMade} 
 </apex:pageBlock>
 <apex:pageBlockButtons >
-<apex:commandButton value="Save" action="{!save}"/>
-<apex:commandButton value="Return" action="{!cancel}"/>
+<apex:commandButton value="{!$Label.Save}" action="{!save}"/>
+<apex:commandButton value="{!$Label.Return}" action="{!cancel}"/>
 </apex:pageBlockButtons>
 <apex:pageBlockTable value="{!selected}" var="a" id="table">
-<apex:column headerValue="Name">
+<apex:column headerValue="{!$Label.Name}">
 <apex:inputField value="{!a.name}"/>
 </apex:column>
-<apex:column headerValue="Type">
+<apex:column headerValue="{!$Label.Type}">
 <apex:inputField value="{!a.Type}"/>
 </apex:column>
-<apex:column headerValue="Status">
+<apex:column headerValue="{!$Label.Status}">
 <apex:inputField value="{!a.Status}"/>
 </apex:column>
-<apex:column headerValue="Actual Cost">
+<apex:column headerValue="{!$Label.ActualCost}">
 <apex:inputField value="{!a.ActualCost}"/>
 </apex:column>
-<apex:column headerValue="Num Sent">
+<apex:column headerValue="{!$Label.NumSent}">
 <apex:inputField value="{!a.NumberSent}"/>
 </apex:column>
-<apex:column headerValue="End Date">
+<apex:column headerValue="{!$Label.EndDate}">
 <apex:inputField value="{!a.EndDate}"/>
 </apex:column>
 </apex:pageBlockTable>
