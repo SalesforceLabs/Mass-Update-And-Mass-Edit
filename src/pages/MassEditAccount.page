@@ -4,32 +4,32 @@
 <apex:pageBlock >
 <apex:pageMessages />
 <apex:pageBlock >
-Note: All modifications made on the page will be lost if Return button is clicked without clicking the Save button first. 
+{!$Label.NoteAllModificationsMade}
 </apex:pageBlock>
 <apex:pageBlockButtons >
-<apex:commandButton value="Save" action="{!save}"/>
-<apex:commandButton value="Return" action="{!cancel}"/>
+<apex:commandButton value="{!$Label.Save}" action="{!save}"/>
+<apex:commandButton value="{!$Label.Return}" action="{!cancel}"/>
 </apex:pageBlockButtons>
 <apex:pageBlockTable value="{!selected}" var="acc" id="table">
-<apex:column headerValue="Name">
+<apex:column headerValue="{!$Label.Name}">
 <apex:inputField value="{!acc.name}"/>
 </apex:column>
-<apex:column headerValue="Annual Revenue">
+<apex:column headerValue="{!$Label.AnnualRevenue}">
 <apex:inputField value="{!acc.AnnualRevenue}"/>
 </apex:column>
-<apex:column headerValue="Rating">
+<apex:column headerValue="{!$Label.Rating}">
 <apex:inputField value="{!acc.Rating}"/>
 </apex:column>
-<apex:column headerValue="Industry">
+<apex:column headerValue="{!$Label.Industry}">
 <apex:inputField value="{!acc.Industry}"/>
 </apex:column>
-<apex:column headerValue="Phone">
+<apex:column headerValue="{!$Label.Phone}">
 <apex:inputField value="{!acc.Phone}"/>
 </apex:column>
-<apex:column headerValue="Type">
+<apex:column headerValue="{!$Label.Type}">
 <apex:inputField value="{!acc.type}"/>
 </apex:column>
-<apex:column headerValue="Description">
+<apex:column headerValue="{!$Label.Description}">
 <apex:inputField value="{!acc.Description}"/>
 </apex:column>
 </apex:pageBlockTable>

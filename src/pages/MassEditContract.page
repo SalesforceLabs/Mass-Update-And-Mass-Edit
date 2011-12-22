@@ -4,35 +4,35 @@
 <apex:pageBlock >
 <apex:pageMessages />
 <apex:pageBlock >
-Note: All modifications made on the page will be lost if Return button is clicked without clicking the Save button first. 
+{!$Label.NoteAllModificationsMade}
 </apex:pageBlock>
 <apex:pageBlockButtons >
-<apex:commandButton value="Save" action="{!save}"/>
-<apex:commandButton value="Return" action="{!cancel}"/>
+<apex:commandButton value="{!$Label.Save}" action="{!save}"/>
+<apex:commandButton value="{!$Label.Return}" action="{!cancel}"/>
 </apex:pageBlockButtons>
 <apex:pageBlockTable value="{!selected}" var="a" id="table">
-<apex:column headerValue="Contract Number">
+<apex:column headerValue="{!$Label.ContractNumber}">
 <apex:inputField value="{!a.ContractNumber}"/>
 </apex:column>
-<apex:column headerValue="Status">
+<apex:column headerValue="{!$Label.Status}">
 <apex:inputField value="{!a.Status}"/>
 </apex:column>
-<apex:column headerValue="Status Code">
+<apex:column headerValue="{!$Label.StatusCode}">
 <apex:inputField value="{!a.StatusCode}"/>
 </apex:column>
-<apex:column headerValue="Term (Month)">
+<apex:column headerValue="{!$Label.TermMonth}">
 <apex:inputField value="{!a.ContractTerm}"/>
 </apex:column>
-<apex:column headerValue="Owner Expiration Notice">
+<apex:column headerValue="{!$Label.OwnerExpirationNotice}">
 <apex:inputField value="{!a.OwnerExpirationNotice}"/>
 </apex:column>
-<apex:column headerValue="Account Name">
+<apex:column headerValue="{!$Label.AccountName}">
 <apex:inputField value="{!a.AccountId}"/>
 </apex:column>
-<apex:column headerValue="Activated Date">
+<apex:column headerValue="{!$Label.ActivatedDate}">
 <apex:inputField value="{!a.ActivatedDate}"/>
 </apex:column>
-<apex:column headerValue="Special Terms">
+<apex:column headerValue="{!$Label.SpecialTerms}">
 <apex:inputField value="{!a.SpecialTerms}"/>
 </apex:column>
 </apex:pageBlockTable>
